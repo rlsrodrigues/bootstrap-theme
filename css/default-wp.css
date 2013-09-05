@@ -1,3 +1,11 @@
+/*======================================
+This file is part of the project bootstrap wordpres theme
+Theme Name: [theme_name]
+Description: Tema desemvolvido para [client_name]
+Version: [version] beta
+Author: [team_name] - [developer name]
+Author URI: [url_team]
+======================================*/
 /*============================ DEFAULT ELEMENTS WORDPRESS ============================*/
 .entry ol, .comment ol{
     list-style: decimal inside;
