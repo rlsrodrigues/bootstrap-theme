@@ -1,0 +1,32 @@
+/*======================================
+This file is part of the project bootstrap wordpres theme
+Theme Name: [theme_name]
+Description: Tema desemvolvido para [client_name]
+Version: [version] beta
+Author: [team_name] - [developer name]
+Author URI: [url_team]
+======================================*/
+/*============================ DEFAULT CONFIGS ============================*/
+.relative   { position: relative; }
+.absolute   { position: absolute; }
+.left       { float: left; }
+.right      { float: right; }
+.clear:     { clear: both; }
+
+/*============================ SETUP ============================*/
+body        { font-family: Arial; font-size: 16px; margin: 0px; padding: 0px; line-height: 22px; position: relative; }
+a:link, 
+a:visited   { text-decoration: none; }
+a:hover     { text-decoration: underline; }
+a           { outline: none; }
+h1,
+h2,
+h3,
+h4,
+h5          { margin: 0px 0px 10px 0px; font-weight: normal; }
+h1          { font-size: 28px; }
+h2          { font-size: 24px; }
+h3          { font-size: 20px; }
+h4          { font-size: 18px; }
+h5          { font-size: 16px; }
+blockquote  { overflow: auto; padding: 0 10px; margin: 20px 30px; background-color: #ddd5ba; border: 1px solid #c7bea0; }

@@ -1,0 +1,118 @@
+/*============================ DEFAULT ELEMENTS WORDPRESS ============================*/
+.entry ol, .comment ol{
+    list-style: decimal inside;
+    margin: 0 0 20px 1.5em;
+}
+.entry ol ol, .comment ol ol{
+    list-style: upper-alpha inside;
+}
+.entry ol ol ol, .comment ol ol ol{
+    list-style: lower-roman inside;
+}
+.entry ol ol ol ol, .comment ol ol ol ol{
+    list-style: lower-alpha inside;
+}
+.entry ul ul, .comment ul ul,
+.entry ol ol, .comment ol ol,
+.entry ul ol, .comment ul ol
+.entry ol ul, .comment ol ul {
+    margin-bottom: 5px;
+}
+dl {
+    margin: 10px 0 20px 0;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-bottom: 20px;
+}
+strong {
+    font-weight: bold;
+}
+cite,
+em,
+i {
+    font-style: italic;
+}
+big {
+    font-size: 1.3em;
+}
+ins {
+    padding: 1px 2px;
+    background: #ffa;
+    text-decoration: none;
+}
+code, pre {
+    padding: 3px 8px;
+    margin: 0 1px;
+    background: #eeeeee;
+    color: #222 !important;
+    font-size: 0.9em;
+    font-family: Monospace, "Courier New", Courier;
+    overflow:auto;
+}
+del, strike, s{
+    text-decoration: line-through;
+}
+pre {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+}
+small {
+    font-size: 0.7em;
+}
+abbr,
+acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+sup,
+sub {
+    height: 0;
+    line-height: 1;
+    position: relative;
+    vertical-align: baseline;
+    font-size: 0.8em;
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: .5ex;
+}
+.entry var, .entry kbd, .entry tt {
+    font-size: 1.1em;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+}
+/*============================ POST IMAGES DEFAULT WORDPRESS ============================*/
+.entry img {
+    max-width: 100%;
+    height: auto;
+}
+.wp-caption  {
+    margin: 5px;
+    max-width: 100%;
+    padding: 7px 3px;
+    background: #e5e5e5;
+    text-align: center;
+}
+.wp-caption-text {
+    margin: 0 !important;
+    padding: 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+.alignleft { 
+    float: left; 
+    display: inline; 
+    margin: 10px 15px 10px 5px;
+}
+.alignright {
+    float: right; 
+    display: inline; 
+    margin: 10px 5px 10px 15px;
+}
+.aligncenter {
+    margin: 10px auto; 
+    display: block;
+}
