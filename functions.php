@@ -20,16 +20,19 @@ if (!function_exists('bt_setup')):
         register_nav_menu('header_menu', 'Menu Cabeçalho');
         // add support for page excerpt's .
         add_post_type_support('page', 'excerpt');
+        // register widget area to sidebar
+        register_sidebar( array(
+            'name'          => __( 'Sidebar', 'bootstrap-theme' ),
+            'id'            => 'sidebar',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        ) );
     }
+
 endif;
 
-//add first and last class to dinamic menu's.
-add_filter('wp_nav_menu', 'bt_add_first_and_last');
-function bt_add_first_and_last($output) {
-  $output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
-  $output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
-  return $output;
-}
 /* ==================================== THEME EXTRA FUNCTIONS ==================================== */
 // Create the better title for pages.
 add_filter('wp_title', 'bt_wp_title', 10, 2);
