@@ -9,9 +9,20 @@ Author URI: [url_team]
 @import url("css/default.css");
 @import url("css/default-wp.css");
 /*============================ PUT YOUR CODE HERE ============================*/
+/* styles example */
+body       						{ font-family: Arial; }
+a:link, 
+a:visited   					{ color: #333; }
+a:hover     					{ color: #999; }
+a           					{ outline: none; }
 .container-header 				{ padding: 10px 0; background: #224DFF; }
 .container-header .header 		{ height: 150px; background: #A00CE8; }
 .container-content				{ padding: 10px 0; background: #E8650C; }
 .container-content .content		{ height: 650px; background: #FFD45B; }
 .container-footer               { padding: 10px 0; background: #25FF75; }
 .container-footer .footer       { height: 150px; background: #0DFF3D; }
+
+/* default theme class */
+.container-content .content .content-page { width: 690px; }
+.container-content .content .sidebar { width: 250px; }
+.container-content .content .sidebar:after { clear: both; }

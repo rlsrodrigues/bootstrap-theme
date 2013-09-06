@@ -14,7 +14,7 @@ Author URI: [url_team]
 .clear:     { clear: both; }
 
 /*============================ SETUP ============================*/
-body        { font-family: Arial; font-size: 16px; margin: 0px; padding: 0px; line-height: 22px; position: relative; }
+body        { font-size: 16px; margin: 0px; padding: 0px; line-height: 22px; position: relative; }
 a:link, 
 a:visited   { text-decoration: none; }
 a:hover     { text-decoration: underline; }

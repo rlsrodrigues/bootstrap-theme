@@ -1,6 +1,6 @@
 <?php
-//define project url
-define(URL, 'http://192.168.1.136/project');
+//define project url (to extra files)
+define(URL, bloginfo('siteurl'));
 
 /* ==================================== THEME SETTINGS ==================================== */
 // Get CSS default (style.css) in theme
