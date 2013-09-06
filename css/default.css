@@ -29,13 +29,13 @@ h2          { font-size: 24px; }
 h3          { font-size: 20px; }
 h4          { font-size: 18px; }
 h5          { font-size: 16px; }
-blockquote  { overflow: auto; padding: 0 10px; margin: 20px 30px; background-color: #ddd5ba; border: 1px solid #c7bea0; }
+blockquote  { overflow: auto; padding: 0 10px; margin: 20px 30px; background-color: .ddd5ba; border: 1px solid .c7bea0; }
 
 /*============================ CONTAINERS ============================*/
-#main-container                 { width: 100%; }
-#container-header,
-#container-footer               { width: 100%; }
-#container-content              { width: 100%; margin: 20px 0; }
-#container-header #header, 
-#container-content #content, 
-#container-footer #footer       { width: 960px; margin: 0 auto; }
+.main-container                 { width: 100%; }
+.container-header,
+.container-footer               { width: 100%; }
+.container-content              { width: 100%; margin: 20px 0; }
+.container-header .header, 
+.container-content .content, 
+.container-footer .footer       { width: 960px; margin: 0 auto; }

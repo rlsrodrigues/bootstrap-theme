@@ -1,29 +1,19 @@
+<?php $url = URL ?>
 <!DOCTYPE html><!-- HTML 5 -->
 <html <?php language_attributes(); ?>>
     <head>
         <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-        <meta name="author" content="Planos Muito Mais Digital - Renato" />
+        <meta name="author" content="[team_name] - [developer name]" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-        <title><?php wp_title('|', true, 'right'); ?></title>
-        <link rel='stylesheet' href='/fonts/stylesheet.css' type='text/css' media='all' />      
+        <title><?php wp_title('|', true, 'right'); ?></title>     
         <!--[if lt IE 9]>
 	        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]--> 
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.cycle.all.js"></script>
-        <script type="text/javascript">
-            $(window).load(function(){
-                $('.slideshow').cycle({
-                   fx: 'fade' // Inclua as outras opções se necessário
-                });
-            });
-        </script>
+	    <![endif]-->
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <div class="container-header">
+        <div class="container-header relative">
         	<header class="header relative">
-
         		<?php //LOGO Condicional se for a home ele mostra em h1 senão mostra em section ?>
 	            <?php if (is_home() || is_front_page()): ?>
 	                <a href="<?php bloginfo('siteurl') ?>">
@@ -51,5 +41,4 @@
         </div>
                   
         <div class="container-content relative">
-            <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
                 

@@ -1,6 +1,6 @@
 <?php
 //define project url
-define('URL', 'http://192.168.1.136/project');
+define(URL, 'http://192.168.1.136/project');
 
 /* ==================================== THEME SETTINGS ==================================== */
 // Get CSS default (style.css) in theme
