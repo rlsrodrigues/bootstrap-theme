@@ -4,6 +4,7 @@ Description: Tema desemvolvido para [client_name]
 Version: [version] beta
 Author: [team_name] - [developer name]
 Author URI: [url_team]
+This file is part of the project bootstrap theme
 ======================================*/
 @import url("css/reset.css");
 @import url("css/default.css");
