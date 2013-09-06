@@ -1,19 +1,19 @@
 <?php
 /* ==================================== THEME SETTINGS ==================================== */
 // Get CSS default (style.css) in theme
-add_action('wp_enqueue_scripts', 'dt_enqueue_scripts');
-if (!function_exists('dt_enqueue_scripts')):
-    function dt_enqueue_scripts() {
-        wp_register_style('dt_stylesheet', get_stylesheet_uri());
-        wp_enqueue_style('dt_stylesheet');
+add_action('wp_enqueue_scripts', 'bt_enqueue_scripts');
+if (!function_exists('bt_enqueue_scripts')):
+    function bt_enqueue_scripts() {
+        wp_register_style('bt_stylesheet', get_stylesheet_uri());
+        wp_enqueue_style('bt_stylesheet');
     }
 endif;
 
 // Theme features
-add_action('after_setup_theme', 'dt_setup');
-if (!function_exists('dt_setup')):
+add_action('after_setup_theme', 'bt_setup');
+if (!function_exists('bt_setup')):
 
-    function dt_setup() {
+    function bt_setup() {
         // add support for thumbnails.
         add_theme_support('post-thumbnails');
         // add support for dinamic menu, if you needly more menu just copy this line and change informations.
@@ -24,16 +24,16 @@ if (!function_exists('dt_setup')):
 endif;
 
 //add first and last class to dinamic menu's.
-add_filter('wp_nav_menu', 'dt_add_first_and_last');
-function dt_add_first_and_last($output) {
+add_filter('wp_nav_menu', 'bt_add_first_and_last');
+function bt_add_first_and_last($output) {
   $output = preg_replace('/class="menu-item/', 'class="first-menu-item menu-item', $output, 1);
   $output = substr_replace($output, 'class="last-menu-item menu-item', strripos($output, 'class="menu-item'), strlen('class="menu-item'));
   return $output;
 }
 /* ==================================== THEME EXTRA FUNCTIONS ==================================== */
 // Create the better title for pages.
-add_filter('wp_title', 'dt_wp_title', 10, 2);
-function dt_wp_title($title, $sep = '') {
+add_filter('wp_title', 'bt_wp_title', 10, 2);
+function bt_wp_title($title, $sep = '') {
     global $paged, $page;
     if (is_feed())
         return $title;
