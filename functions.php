@@ -1,7 +1,4 @@
 <?php
-//define project url (to extra files)
-define(URL, bloginfo('siteurl'));
-
 /* ==================================== THEME SETTINGS ==================================== */
 // Get CSS default (style.css) in theme
 add_action('wp_enqueue_scripts', 'dt_enqueue_scripts');
