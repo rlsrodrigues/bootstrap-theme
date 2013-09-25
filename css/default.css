@@ -1,6 +1,6 @@
 /*======================================
 Theme Name: [theme_name]
-Description: Tema desemvolvido para [client_name]
+Description: Tema desenvolvido para [client_name]
 Version: [version] beta
 Author: [team_name] - [developer name]
 Author URI: [url_team]
@@ -11,7 +11,9 @@ This file is part of the project bootstrap theme
 .absolute   { position: absolute; }
 .left       { float: left; }
 .right      { float: right; }
-.clear:     { clear: both; }
+.clear      { clear: both; }
+.img-block,
+.img-block img 	{ display: block; margin: 0 auto; }
 
 /*============================ SETUP ============================*/
 body        { font-size: 16px; margin: 0px; padding: 0px; line-height: 22px; position: relative; }
