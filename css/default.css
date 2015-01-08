@@ -7,31 +7,35 @@ Author URI: [url_team]
 This file is part of the project bootstrap theme
 ======================================*/
 /*============================ DEFAULT CONFIGS ============================*/
-.relative   { position: relative; }
-.absolute   { position: absolute; }
-.left       { float: left; }
-.right      { float: right; }
-.clear      { clear: both; }
+.relative   	{ position: relative; }
+.absolute   	{ position: absolute; }
+.left       	{ float: left; }
+.right      	{ float: right; }
+.p-left 		{ left: 0; }
+.p-right 		{ right: 0; }
+.clear      	{ clear: both; }
+.none 			{ display: none; }
+.align-content 	{ width: 960px; margin: 0 auto; }
 .img-block,
 .img-block img 	{ display: block; margin: 0 auto; }
 
 /*============================ SETUP ============================*/
-body        { font-size: 16px; margin: 0px; padding: 0px; line-height: 22px; position: relative; }
+body        	{ font-size: 16px; margin: 0px; padding: 0px; line-height: 22px; position: relative; }
 a:link, 
-a:visited   { text-decoration: none; }
-a:hover     { text-decoration: underline; }
-a           { outline: none; }
+a:visited   	{ text-decoration: none; }
+a:hover     	{ text-decoration: underline; }
+a           	{ outline: none; }
 h1,
 h2,
 h3,
 h4,
-h5          { margin: 0px 0px 10px 0px; font-weight: normal; }
-h1          { font-size: 28px; }
-h2          { font-size: 24px; }
-h3          { font-size: 20px; }
-h4          { font-size: 18px; }
-h5          { font-size: 16px; }
-blockquote  { overflow: auto; padding: 0 10px; margin: 20px 30px; background-color: .ddd5ba; border: 1px solid .c7bea0; }
+h5          	{ margin: 0px 0px 10px 0px; font-weight: normal; }
+h1          	{ font-size: 28px; }
+h2          	{ font-size: 24px; }
+h3          	{ font-size: 20px; }
+h4          	{ font-size: 18px; }
+h5          	{ font-size: 16px; }
+blockquote  	{ overflow: auto; padding: 0 10px; margin: 20px 30px; background-color: #ddd5ba; border: 1px solid #c7bea0; }
 
 /*============================ CONTAINERS ============================*/
 .main-container                 { width: 100%; }
